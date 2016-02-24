@@ -8,7 +8,8 @@
     [DG] ei khetre aamra tweets e search korchi....
     [DG] However, I think we should do a full user study on quering behaviour of searchers on tweets...
     [DG] Erokom user study ami khunjchilum... kintu paini.... aamar mone hoy controlled settings e
-    [DG] ekta task/goal driven user study korle bhalo....
+    [DG] ekta task/goal driven user study korle bhalo.... in fact, we can plan this for the journal submission
+    where we first verify the hypothesis that queries issued by users are likely to be in English only and not code mixed...
     [MM] This claim comes up again in Section 2.1, and seems to
     [MM] form the basis for query set construction method
     [MM] adopted.
@@ -18,6 +19,7 @@
     [MM] and checked manually. The claim that the
     [MM] "percentage of code-mixed tweets is thus significant"
     [MM] assumes that the classifier is more or less accurate.
+    [DG] We have a student working in DCU who has developed a classifier for such code mixed words... in fact, we have cited his paper in the draft that we sent to sigir... i'll grab the classifier from him and then we can report two versions of the experiments one with the simple dictionary approach and the other with the SVM based classifier....
 *** Section 3: 
     [MM] "... (from Table 1 it can be seen that the number of
     [MM] monolingual English documents is more than 10 times that
@@ -27,12 +29,15 @@
     [MM] then were the experiments really needed? We need to
     [MM] think a little more carefully about what point we are
     [MM] trying to make (and redesign the experiments if required).
+    [DG] han point ta holo je jodio ei code-mixed gulo sonkhay kom kintu ekdom negligible noy... in fact sonkhay kom bolei if u assume uniform likelihood of any document to be retrieved in top ranks, eder khetre the prob will be less (c/N) < (m/N), (m>>c)
+    tai eder retrievability boost korar jonyo oi collection stats niye khela kora....
 *** Table 2:
     Retrievability score-gulo dekhe kamon khoTka lagchhe. 
     @Debasis, Single index, split index ar clustered index ki shob alada
     alada kore implement korechhile? Single ar split index clustered-er
     special case hishebe pawa uchit, noy? Na kichhu bhul bujhchhi? sheTa ki
     confirm kora jaay?
+    [DG] han in principle dutoi paoa jaabe clustered theke... ami alada index rekhechilum kenona clustered ta korechi sobar seshe.... totokhyone single aar split er results peye gechilum bole aar chalaini... oi \alpha-r value ta diyei eta control korte para uchit...
 
 
 * Exposition
