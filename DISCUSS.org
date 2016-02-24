@@ -1,1 +1,60 @@
-  
+
+* Technical issues
+*** Section 1, "the search queries executed on Twitter are mostly not code mixed"
+    [MM] Citation required. AFAIR, track overview paper for
+    [MM] Mixed-script Information Retrieval made the opposite
+    [MM] claim. @Ayan, confirm korte parbe please?
+    [MM] This claim comes up again in Section 2.1, and seems to
+    [MM] form the basis for query set construction method
+    [MM] adopted.
+*** Section 2.1, "Dictionary based Classification"
+    [MM] Some estimate of classification accuracy should be
+    [MM] provided. A small, manageable sample could be randomly selected
+    [MM] and checked manually. The claim that the
+    [MM] "percentage of code-mixed tweets is thus significant"
+    [MM] assumes that the classifier is more or less accurate.
+*** Section 3: 
+    [MM] "... (from Table 1 it can be seen that the number of
+    [MM] monolingual English documents is more than 10 times that
+    [MM] of the number of code-mixed ones) ..."
+    [MM] This is probably a serious weakness. Obvious question
+    [MM] this point raises is: if this is clear from Table 1,
+    [MM] then were the experiments really needed? We need to
+    [MM] think a little more carefully about what point we are
+    [MM] trying to make (and redesign the experiments if required).
+*** Table 2:
+    Retrievability score-gulo dekhe kamon khoTka lagchhe. 
+    @Debasis, Single index, split index ar clustered index ki shob alada
+    alada kore implement korechhile? Single ar split index clustered-er
+    special case hishebe pawa uchit, noy? Na kichhu bhul bujhchhi? sheTa ki
+    confirm kora jaay?
+
+
+* Exposition
+*** Section 1, How can code mixing affect IR?
+    [MM] Motivation-ta arektu concrete korte parle bhalo
+    [MM] (preferably with an example).
+*** average document frequency (DF)
+    [MM] If the definition given is correct, then this is a
+    [MM] misleading term, since it suggests mean DF across terms.
+    [MM] Also, a definition / citation needs to be provided for TTR.
+*** Query set construction
+    [MM] Following statistics may also be indicative, and should
+    [MM] be reported: 
+    [MM] - # of docs. in each collection containing at least 1
+    [MM]   term from the intersection vocabulary
+    [MM] - size of intersection vocabulary / total vocabulary for
+    [MM]   each collection
+*** Split index: $D \in \{ D_M, D_C \}$
+    [MM] ei notation-Ta bhalo noy
+
+
+* #---------------------------------------------------------------------------#
+
+
+# Local Variables:
+# eval: (font-lock-add-keywords nil
+#                  '(("^[ ]+\\[AB\\] .*$" . font-lock-doc-face)
+#                    ("^[ ]+\\[DG\\] .*$" . font-lock-builtin-face)
+#                    ("^[ ]+\\[MM\\] .*$" . font-lock-constant-face)))
+# End:
